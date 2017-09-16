@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "rx:blocks/oblock",
+        "top": "rx:blocks/oblock",
+        "side": "rx:blocks/oblock"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=top": { "model": "rx:oblock"},
+        "half=bottom": { "model": "rx:oblock"}
+    }
+}

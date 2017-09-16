@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "burning=false,facing=north": { "model": "rx:dual_furnace" },
+        "burning=false,facing=south": { "model": "rx:dual_furnace", "y": 180 },
+        "burning=false,facing=west":  { "model": "rx:dual_furnace", "y": 270 },
+        "burning=false,facing=east":  { "model": "rx:dual_furnace", "y": 90 },
+        "burning=true,facing=north": { "model": "rx:dual_furnace" },
+        "burning=true,facing=south": { "model": "rx:dual_furnace", "y": 180 },
+        "burning=true,facing=west":  { "model": "rx:dual_furnace", "y": 270 },
+        "burning=true,facing=east":  { "model": "rx:dual_furnace", "y": 90 }
+    }
+}

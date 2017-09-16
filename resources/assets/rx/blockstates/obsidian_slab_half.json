@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "rx:obsidian_slab_bottom" },
+        "half=top": { "model": "rx:obsidian_slab_top" }
+    }
+}

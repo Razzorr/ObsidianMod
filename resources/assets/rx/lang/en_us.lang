@@ -1,0 +1,38 @@
+item.dude.name=Obsidian Ingot
+item.obsidiansword.name=Obsidian Sword
+item.obsidianpicaxe.name=Obsidian Pickaxe
+item.obsidianaxe.name=Obsidian Axe
+item.obsidianhoe.name=Obsidian Hoe
+item.obsidianshovel.name=Obsidian Shovel
+item.obsidianfood.name=Obsidian Apple
+tile.hi.name=Deceration Block
+tile.lamp.name=Obsidian Lamp
+tile.grill.name=XRay
+tile.block.name=Obsidian BlockXX
+tile.obsidian_button.name=Obsidian Button
+tile.obsidian_pressure_plate.name=Obsidian Pressure Plate
+tile.obsidian_slab_half.name=Obsidian Slab
+tile.obsidian_stairs.name=Obsidian Stairs
+
+item.obsidian_paxel.name=Obsidian Paxel
+
+item.emerald_paxel.name=Emerald Paxel
+
+item.obsidiancookedfood.name=Obsidian Cooked Apple
+
+tile.dual_furnace.name=Obsidian Secret Comparment
+
+container.dual_furnace=Secret Gui Compartment
+
+
+
+
+item.emeraldsword.name=Emerald Lightning Potion Sword
+
+item.obsidianhelmet.name=Obsidian Helmet
+item.obsidianchest.name=Obsidian ChestPlate
+item.obsidianleg.name=Obsidian Leggings
+item.obsidianboot.name=Obsidian Boots
+
+itemGroup.modTab=Obsidian Tab Mod
+tile.obsidianore.name=Obsidian Ore

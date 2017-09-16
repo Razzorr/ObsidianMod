@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "variant=obsidian": { 
+            "model": "rx:planks_obsidian" }
+    }
+}
+
