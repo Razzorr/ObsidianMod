@@ -13,6 +13,8 @@ import com.razzorxx.mod.blocks.BlockOSlabHalf;
 import com.razzorxx.mod.blocks.BlockObsidianOre;
 import com.razzorxx.mod.blocks.CustomBlockStairs;
 import com.razzorxx.mod.blocks.activators.CustomBlockButton;
+import com.razzorxx.mod.blocks.activators.CustomBlockFence;
+import com.razzorxx.mod.blocks.activators.CustomBlockFenceGate;
 import com.razzorxx.mod.blocks.activators.CustomBlockPressurePlate;
 import com.razzorxx.mod.blocks.itemvariants.ItemBlockVariants;
 import com.razzorxx.mod.blocks.obsidianwood.CustomBlockPlanks;
@@ -43,7 +45,9 @@ public class ModBlocks {
 	public static CustomBlockPressurePlate obsidian_pressure_plate;
 	public static CustomBlockStairs obsidian_stairs;
 	public static BlockDualFurnace dual_furnace;
-	public static Block planks;
+	public static CustomBlockPlanks planks;
+	public static CustomBlockFence obsidian_fence;
+	public static CustomBlockFenceGate obsidian_fence_gate;
 
 	
 	public static void init() {
@@ -59,6 +63,8 @@ public class ModBlocks {
 		obsidian_stairs = new CustomBlockStairs("obsidian_stairs", oblock.getDefaultState());
 		dual_furnace = new BlockDualFurnace();
 		planks = new CustomBlockPlanks("planks");
+		obsidian_fence = new CustomBlockFence("obsidian_fence", 2.5F, 4.5F);
+		obsidian_fence_gate = new CustomBlockFenceGate("obsidian_fence_gate", 2.5F, 4.5F);
 	
 	}
 	
@@ -74,7 +80,10 @@ public class ModBlocks {
 		registerBlock(obsidian_pressure_plate);
 		registerBlock(obsidian_stairs);
 		registerBlock(dual_furnace);
-		registerBlockWithVariants(planks, new ItemBlockVariants(planks));
+		//registerBlockWithVariants(planks, new ItemBlockVariants(planks));
+		registerBlock(planks);
+		registerBlock(obsidian_fence);
+		registerBlock(obsidian_fence_gate);
 		
 		GameRegistry.registerTileEntity(TileEntityDualFurnace.class, "dual_furnace");
 	}
@@ -92,6 +101,8 @@ public class ModBlocks {
 		ForgeRegistries.BLOCKS.register(obsidian_stairs);
 		ForgeRegistries.BLOCKS.register(dual_furnace);
 		ForgeRegistries.BLOCKS.register(planks);
+		ForgeRegistries.BLOCKS.register(obsidian_fence);
+		ForgeRegistries.BLOCKS.register(obsidian_fence_gate);
 		
 		
 		
@@ -116,10 +127,10 @@ public class ModBlocks {
 	
 	public static void registerRenders() {
 		
-		for(int i = 0; i < CustomBlockPlanks.EnumType.values().length; i++)
-		{
-			registerRender(planks, i, "planks_" + CustomBlockPlanks.EnumType.values()[i].getName());
-		}
+		//for(int i = 0; i < CustomBlockPlanks.EnumType.values().length; i++)
+		//{
+			//registerRender(planks, i, "planks_" + CustomBlockPlanks.EnumType.values()[i].getName());
+		//}
 		
 		
 		registerRender(obsidianore);
@@ -133,6 +144,8 @@ public class ModBlocks {
 		registerRender(obsidian_stairs);
 		registerRender(dual_furnace);
 		registerRender(planks);
+		registerRender(obsidian_fence);
+		registerRender(obsidian_fence_gate);
 		
 		
 	}
