@@ -12,6 +12,8 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
+//Make sure this is in the items folder. 
+
 public class ItemFlyArmor extends ItemArmor{
 	
 	public ItemFlyArmor(ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
