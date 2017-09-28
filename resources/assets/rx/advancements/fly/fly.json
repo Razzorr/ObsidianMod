@@ -1,0 +1,57 @@
+{
+    "display": {
+        "icon": {
+            "item": "rx:itemflychestplate"
+        },
+        "title": {
+            "translate": "advancements.fly.title"
+        },
+        "description": {
+            "translate": "advancements.fly.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "rx:root/root",
+    "criteria": {
+        "fly_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "rx:itemflyhelmet"
+                    }
+                ]
+            }
+        },
+        "fly_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "rx:itemflychestplate"
+                    }
+                ]
+            }
+        },
+        "fly_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "rx:itemflyleggings"
+                    }
+                ]
+            }
+        },
+        "fly_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "rx:itemflyboots"
+                    }
+                ]
+            }
+        }
+    }
+}
