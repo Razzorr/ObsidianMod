@@ -4,6 +4,8 @@ import java.util.Random;
 
 import com.razzorxx.mod.init.ModBlocks;
 
+import net.minecraft.block.state.pattern.BlockMatcher;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
@@ -14,11 +16,14 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class ObsidianOreGen implements IWorldGenerator{
 	
-	private WorldGenerator obsidianore;
+	private WorldGenerator obsidianore, nether, end;
+	
 	
 	public ObsidianOreGen()
 	{
 		obsidianore = new WorldGenMinable(ModBlocks.obsidianore.getDefaultState(), 9);	
+		nether = new WorldGenMinable(ModBlocks.obsidianorenether.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		end = new WorldGenMinable(ModBlocks.obsidianoreend.getDefaultState(), 9, BlockMatcher.forBlock(Blocks.END_STONE));
 	}
 	
 	@Override
@@ -27,12 +32,24 @@ public class ObsidianOreGen implements IWorldGenerator{
 		switch(world.provider.getDimension())
 		{
 		case 0:
+			
 			runGenerator(obsidianore, world, random, chunkX, chunkZ, 50, 0, 50);
 			
 			break;
+			
+			
 		case 1:
+			
+			runGenerator(end, world, random, chunkX, chunkZ, 50, 0, 255);
+			runGenerator(end, world, random, chunkX, chunkZ, 50, 0, 255);
+			
 			break;
+			
+			
 		case -1:
+			
+			runGenerator(nether, world, random, chunkX, chunkZ, 50, 0, 50);
+			
 			break;
 		}
 	}
